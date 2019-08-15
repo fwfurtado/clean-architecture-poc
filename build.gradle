@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE' apply false
+}
+
+
+group = 'me.fwfurtado.car'
+version = '0.0.1-SNAPSHOT'
+
+allprojects {
+    group = rootProject.group
+    version = rootProject.version
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java-library'
+
+
+    sourceCompatibility = '12'
+
+
+}
+
+
